@@ -1,3 +1,7 @@
 .bg-black {
     background-color: black;
 }
+
+.row{
+    display: flex;
+}

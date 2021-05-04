@@ -1,21 +1,19 @@
 const gridContainer = document.querySelector ("#grid-container");
-
-let rows = document.getElementsByClassName ("gridRow");
-let cells = document.getElementsByClassName("cell");
-function defaultGrid() {
-    makeRows(16);
-    makeColumns(16);
+let userChoice = 16
+for(let j = 0; j<userChoice;j++){
+    const rowOfCells = document.createElement ("div");
+    rowOfCells.classList.add("row");
+    for( let i = 0; i<userChoice; i++) {
+        const singleCell = document.createElement ("div");
+         singleCell.textContent = "hello";
+         singleCell.style.color = "grey";
+         singleCell.classList.add ("bg-black") 
+         singleCell.addEventListener ("mouseover" , () => {
+            singleCell.style.color = "blue";
+        });
+        rowOfCells.appendChild (singleCell);
+    }
+    gridContainer.appendChild(rowOfCells)
 }
-// let numOfTimes = 16;
-// for( let numOfTimes= 0; i<numOfTimes; i++) {
-// const singleCell = document.createElement ("div");
-// singleCell.textContent = "hello";
-// singleCell.style.color = "grey";
-// singleCell.classList.add ("bg-black")
 
-
-singleCell.addEventListener ("click" , () => {
-    alert ("hello world");
-});
-gridContainer.appendChild (singleCell);
 
