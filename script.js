@@ -9,11 +9,16 @@ for(let j = 0; j<userChoice;j++){
          singleCell.style.color = "grey";
          singleCell.classList.add ("bg-black") 
          singleCell.addEventListener ("mouseover" , () => {
-            singleCell.style.color = "blue";
+            singleCell.style.color = "yellow";
         });
         rowOfCells.appendChild (singleCell);
     }
     gridContainer.appendChild(rowOfCells)
 }
+const row2 = document.createElement ("div");
+
+
+
+
 
 
