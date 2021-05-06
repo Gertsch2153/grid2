@@ -6,10 +6,10 @@ for(let j = 0; j<userChoice;j++){
     for( let i = 0; i<userChoice; i++) {
         const singleCell = document.createElement ("div");
          singleCell.textContent = "hello";
-         singleCell.style.color = "grey";
+         singleCell.style.color = "gray";
          singleCell.classList.add ("bg-black") 
          singleCell.addEventListener ("mouseover" , () => {
-            singleCell.style.color = "yellow";
+            singleCell.style.color = "purple";
            
          });
          rowOfCells.appendChild (singleCell);
